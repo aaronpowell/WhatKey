@@ -12,3 +12,11 @@ set :views, File.dirname(__FILE__) + '/'
 get '/' do
 	haml :keydown
 end
+
+get '/keydown' do
+	haml :keydown
+end
+
+get '/keypress' do
+	haml :keypress
+end
