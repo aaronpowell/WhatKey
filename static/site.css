@@ -13,5 +13,14 @@ body
 	width: 900px;
 	text-align: center;
 	min-height:600px;
+}
+
+#kc
+{
 	font-size:400px;
+}
+
+a, a:visited
+{
+	color: #fff;
 }
