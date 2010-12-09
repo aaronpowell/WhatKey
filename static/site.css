@@ -1,0 +1,17 @@
+body
+{
+	max-width: 100%;
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 62.5%;
+	background-color:#000;
+}
+
+#content 
+{
+	margin: 0 auto;
+	width: 900px;
+	text-align: center;
+	min-height:600px;
+	font-size:400px;
+}
