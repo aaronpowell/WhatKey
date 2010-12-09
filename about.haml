@@ -3,6 +3,9 @@
 	%head
 		%title WhatKey? About
 		%link{:href => 'site.css', :rel => 'stylesheet', :type => 'text/css'}
+		/[if lte IE 8]
+			:javascript 
+				document.createElement('footer')
 	%body
 		#content
 			%h1 What's this all about?
@@ -21,8 +24,8 @@
 				and
 				%a{:href => '/keyup', :title => 'keyup'} keyup
 				which have a slight differences between each of them.
-			#footer 
-				%p
+			%footer 
+				%nav
 					%a{:href => '/keydown', :title => 'keydown'} keydown
 					|
 					%a{:href => '/keypress', :title => 'keypress'} keypress
@@ -30,6 +33,7 @@
 					%a{:href => '/keyup', :title => 'keyup'} keyup
 					|
 					%a{:href => '/about', :title => 'about'} about
+				%br
 				Produced by
 				%a{:href => 'http://aaron-powell.com', :title => 'Aaron Powell'} Aaron Powell
 		:javascript
