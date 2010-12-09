@@ -13,14 +13,21 @@ body
 	width: 900px;
 	text-align: center;
 	min-height:600px;
+	font-size:1.5em;
 }
 
 #kc
 {
-	font-size:400px;
+	font-size:30em;
+	text-shadow: #CCC 2px 2px 2px;
 }
 
 a, a:visited
 {
 	color: #fff;
+}
+
+#footer
+{
+	font-size:0.8em;
 }

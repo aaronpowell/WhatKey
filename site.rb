@@ -20,3 +20,11 @@ end
 get '/keypress' do
 	haml :keypress
 end
+
+get '/keyup' do
+	haml :keyup
+end 
+
+get '/about' do
+	haml :about
+end
