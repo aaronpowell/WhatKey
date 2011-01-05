@@ -1,0 +1,33 @@
+body
+{
+	max-width: 100%;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: #fff;
+	font-size: 62.5%;
+	background-color:#000;
+}
+
+#content 
+{
+	margin: 0 auto;
+	width: 900px;
+	text-align: center;
+	min-height:600px;
+	font-size:1.5em;
+}
+
+#kc
+{
+	font-size:30em;
+	text-shadow: #CCC 2px 2px 2px;
+}
+
+a, a:visited
+{
+	color: #fff;
+}
+
+footer
+{
+	font-size:0.8em;
+}

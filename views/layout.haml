@@ -1,0 +1,33 @@
+!!!
+%html
+	%head
+		%title WhatKey? #{locals[:title]}
+		%link{:href => 'site.css', :rel => 'stylesheet', :type => 'text/css'}
+		/[if lte IE 8]
+			:javascript 
+				document.createElement('footer')
+	%body
+		#content
+			=yield
+			%footer 
+				%nav
+					%a{:href => '/keydown', :title => 'keydown'} keydown
+					|
+					%a{:href => '/keypress', :title => 'keypress'} keypress
+					|
+					%a{:href => '/keyup', :title => 'keyup'} keyup
+					|
+					%a{:href => '/about', :title => 'about'} about
+				%br
+				Copyright &copy 2010 - #{Time.now.year} 
+				%a{:href => 'http://aaron-powell.com', :title => 'Aaron Powell'} Aaron Powell
+		:javascript
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-20152461-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})(); 

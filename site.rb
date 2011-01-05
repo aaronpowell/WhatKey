@@ -1,30 +1,24 @@
-require 'sinatra'
-require 'haml'
+['sinatra', 'haml'].each {|gem| require gem}
+require 'sinatra/reloader' if development?
 
-configure :production do
-  # app startup
-end
-
-set :public, File.dirname(__FILE__) + '/static'
-set :views, File.dirname(__FILE__) + '/'
 set :haml, :format => :html5
 
 get '/' do
-	haml :keydown
+	haml :keydown, :locals => {:title => "keydown event"}
 end
 
 get '/keydown' do
-	haml :keydown
+	haml :keydown, :locals => {:title => "keydown event"}
 end
 
 get '/keypress' do
-	haml :keypress
+	haml :keypress, :locals => {:title => "keypress event"}
 end
 
 get '/keyup' do
-	haml :keyup
+	haml :keyup, :locals => {:title => "keyup event"}
 end 
 
 get '/about' do
-	haml :about
+	haml :about, :locals => {:title => "About"}
 end
