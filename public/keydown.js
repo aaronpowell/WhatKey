@@ -3,6 +3,7 @@ $('body').live('keydown', function(e) {
 });
 $(function() {
 	$(document).keydown(function(e) {
+		e.preventDefault();
 		$('#kc').text(e.keyCode === 0 ? e.which : e.keyCode);
 	});
 });
